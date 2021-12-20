@@ -22,6 +22,12 @@ body{
 #sideindhold{
   margin-top: 7em;
 }
+
+.imp{
+  background-color: #cacacac5;
+  padding: 4px;
+  border-radius: 5px;
+}
 /* Body slut */
 
 /*navigation bar*/
