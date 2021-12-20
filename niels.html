@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Eksamens Projekt</title>
+    <title>Niels' Undervisning</title>
   </head>
 
   <body>
@@ -14,35 +14,34 @@
     <div class="pagewrap">
       <header>
         <nav id="navbar">
-          <div id="Nav_container">
-      <!--navbar_links-->
-            <section>
-              <h1 id="Logo">Riis Media</h1>
-            </section>
-            <section id="navbar_links">
-              <a href="#">Forside</a>
-              <a href="niels.html">Niels</a>
-              <a href="#">Carsten</a>
-              <a class="aktiv" href="kommunikation.html">Morten</a>
-            </section><!--navbar_links slut-->
-      <!-- Mobile nav -->
-            <button class="burger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-            
-            <nav id="nav-mobile">
-              <a href="#">Forside</a>
-              <a href="niels.html">Niels</a>
-              <a href="#">Carsten</a>
-              <a href="kommunikation.html">Morten</a>
-            </nav>
-        <!-- Mobile nav slut-->
-          </div><!--Nav-Container slut-->
-        </nav>
+            <div id="Nav_container">
+        <!--navbar_links-->
+              <section>
+                <h1 id="Logo">Riis Media</h1>
+              </section>
+              <section id="navbar_links">
+                <a href="#">Forside</a>
+                <a class="aktiv" href="niels.html">Niels</a>
+                <a href="#">Carsten</a>
+                <a href="kommunikation.html">Morten</a>
+              </section><!--navbar_links slut-->
+        <!-- Mobile nav -->
+              <button class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              
+              <nav id="nav-mobile">
+                <a href="#">Forside</a>
+                <a href="niels.html">Niels</a>
+                <a href="#">Carsten</a>
+                <a href="kommunikation.html">Morten</a>
+              </nav>
+          <!-- Mobile nav slut-->
+            </div><!--Nav-Container slut-->
+          </nav>
       </header>
-      
 
       <section id="sideindhold">
         <section id="title">
@@ -54,13 +53,27 @@
   <!--Boks1 start-->
           <section class="boks1">
             <details>
-              <summary>Kommunikations paradigmer</summary>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.''</p>
+              <summary>Server</summary>
+              <p>En server er navnet vi bruger for en computer, som deler sin data.
+                Dette er ofte en computer, med meget stor lager kapacitet, hvor andre <span class=imp>enheder(klienter/clients)</span> herved kan hente dataen.
+                </p>
               <img src="img/Serverill.png" alt="Server illustration">
               <details>
-                <summary>Boks2</summary>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.''</p>
-                <img src="img/Serverill.png" alt="si">
+                <summary>Forbindelse til server</summary>
+                <p>Man forbinder til en server via netværket.
+                    Når det kommer til en hjemmeside, forbinder vi via en browser. Dette gør vi ved hjælp af et domænenavn. For at vi kan få domænenavnet til at være brugbart, skal vi bruge en <span class=imp>DNS </span>
+                </p>
+                <details>
+                    <summary>DNS</summary>
+                    <p>DNS eller Domain name system, er et system, som forbinder dit domænenavn med en <span class=imp></span>IPv4(255.255.255.255)</span> eller <span class=imp></span>IPv6(2001:0DB8:AC10:FE01::)</span> adresse.
+                    </p>
+                  </details>
+              </details>
+              <details>
+                <summary>FTP</summary>
+                <p>FTP eller File transfer protocol, bruges til at forbinde og flytte indhold til serveren, fra din lokale enhed.
+                    Dette gøres igennem en FTP-client, som winSCP eller FileZila.                    
+                </p>
               </details>
             </details>
           </section>

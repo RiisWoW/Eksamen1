@@ -2,7 +2,7 @@
 /*Genbrugelige variabler*/
 :root{
   --dark: #212121;
-  --lg: #FEFEFE;
+  --lg: #e4e4e4;
   --blue: #1194e7;
   --gray: #E5E5E5;
 }
@@ -115,9 +115,17 @@ nav{
 
   transform-origin: 0 0;
 
-  transition: 0.4s;
+  transition: 0.3s;
+}
+.burger:hover span:nth-child(1) {
+  transform: translateX(-5px);
+  background-color: var(--blue);
 }
 
+.burger:hover span:nth-child(3) {
+  transform: translateX(5px);
+  background-color: var(--blue);
+}
 .burger.aktiv span:nth-child(1) {
   transform: translate(0px, -2px) rotate(45deg);
 }
@@ -170,7 +178,7 @@ h3{
 details{
   margin: 1rem auto;
   padding: 0 1rem;
-  width: 35em;
+  width: 45em;
   max-width: calc(100% - 2rem);
   position: relative;
   border: 1px solid var(--blue);
@@ -262,46 +270,10 @@ summary{
     display: flex;
   }
   #Boksene{
-    display: grid;
-    grid-template-columns:0.5fr 1fr 1fr 0.5fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    ". b1 b2 ."
-    ". b3 b4 ."
-    ". b5 b6 ."
-    ". b7 b8 ."
-    ". b9 b10 .";
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     
   }
-  /* Grid Names */
-  .boks1{
-    grid-area: b1;
-  }
-  .boks2{
-    grid-area: b2;
-  }
-  .boks3{
-    grid-area: b3;
-  }
-  .boks4{
-    grid-area: b4;
-  }
-  .boks5{
-    grid-area: b5;
-  }
-  .boks6{
-    grid-area: b6;
-  }
-  .boks7{
-    grid-area: b7;
-  }
-  .boks8{
-    grid-area: b8;
-  }
-  .boks9{
-    grid-area: b9;
-  }
-  .boks10{
-    grid-area: b10;
-  }
+
 }
