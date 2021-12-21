@@ -184,7 +184,7 @@ h3{
 details{
   margin: 1rem auto;
   padding: 0 1rem;
-  width: 45em;
+  width: 60em;
   max-width: calc(100% - 2rem);
   position: relative;
   border: 1px solid var(--blue);
@@ -214,18 +214,20 @@ details::before{
 }
 
 details[open]{
-  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 summary {
-  padding: 1.8rem 1em 1rem 1.2em;
+  padding-top: 1em;
+  padding: auto;
   display: block;
   position: relative;
-  font-size: 1.33em;
+  font-size: 2em;
   font-weight: bold;
   cursor: pointer;
   color: var(--dark);
-  
+  text-align: center;
+  height: 3.5em;
 }
 
 summary::before, summary::after{
@@ -258,11 +260,7 @@ details[open] summary::after  {
   Margin-top: 5em;
 }
 
-summary{
-  cursor: pointer;
-  height: 4em;
-  
-}
+
 
 
 /* Bokse slut */
@@ -281,5 +279,13 @@ summary{
     justify-content: center;
     
   }
+
+}
+/* Screen slut */
+/* IMG */
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
 }
