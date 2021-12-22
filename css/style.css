@@ -1,17 +1,18 @@
 
-/*Genbrugelige variabler*/
+/*Genbrugelige variabler & Imports*/
 :root{
   --dark: #212121;
   --lg: #e4e4e4;
   --blue: #1194e7;
   --gray: #E5E5E5;
 }
+
+
 /*Genbrugelige variabler slut*/
 
 /*BODY & Side indhold*/
 body{
   background-color: var(--lg);
-  font-family: sans-serif;
   background-image: url(../img/BG.png);
   background-repeat: no-repeat;
   background-size: cover ;
@@ -75,12 +76,19 @@ body{
 }
 #Logo{
   color: var(--lg);
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 900;
   letter-spacing: 2px;
   text-transform: uppercase;
-  user-select: none;
+  cursor: pointer;
+  font-family: 'Iceland';
+  transition: color 0.6s ease;
 }
+
+#Logo:hover{
+  color: var(--blue);
+}
+
 nav{
   position: fixed;
   top: 0;
@@ -163,6 +171,9 @@ nav{
 #navbar_links a.aktiv, #navbar_links a:hover{
   color: var(--blue);
 }
+a{
+  font-family: 'Orbitron';
+}
 /* Nav Slut */
 /* Title */
 #title{
@@ -171,18 +182,21 @@ nav{
   text-transform: uppercase;
   color: var(--dark);
 }
+
 h2{
   font-size: 6vw;
+  font-family: 'Orbitron', sans-serif;
 }
 h3{
   font-size: 5vw;
+  font-family: 'Orbitron', sans-serif;
 }
 /* Title Slut */
 /* bokse */
 details{
   margin: 1rem auto;
   padding: 1rem 1rem;
-  width: 60em;
+  width: 40em;
   max-width: calc(100% - 2rem);
   position: relative;
   border: 2px solid var(--blue);
@@ -226,6 +240,7 @@ summary {
   color: var(--dark);
   height: 3.5em;
   margin-bottom: 1em;
+  font-family: 'Orbitron', sans-serif;
 }
 
 summary::before, summary::after{
@@ -258,7 +273,13 @@ details[open] summary::after  {
   Margin-top: 5em;
 }
 
+p{
+  font-size: 1.2em;
+}
 
+li{
+  font-size: 1.2em;
+}
 
 
 /* Bokse slut */
@@ -271,16 +292,18 @@ img{
   border-radius: 10px;
   
 }
-
-img:hover{
-border: 6px solid var(--blue);
-transition: 0.2s;
+.projekterIMG:hover{
+  padding: 1em;
+  border: 6px solid var(--blue);
+  transition: 0.2s;
 }
+
 figcaption{
   text-align: center;
   font-weight: bold;
   font-size: 1em;
 }
+
 /* Screen */
 @media screen and (min-width: 1080px) {
   
@@ -306,12 +329,13 @@ figcaption{
   .projekterIMG{
     width: 45%;
     padding: 1em;
-    
   }
   
   summary {
-    font-size: 2.5em;
+    font-size: 1.5em;
     text-align: center;
+    height: 1em;
   }
+
 }
 /* Screen slut */
