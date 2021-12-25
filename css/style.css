@@ -13,7 +13,7 @@
 /*BODY & Side indhold*/
 body{
   background-color: var(--lg);
-  background-image: url(../img/BG.png);
+  background-image: url(../img/BG2.png);
   background-repeat: no-repeat;
   background-size: cover ;
   background-attachment: fixed;
@@ -74,19 +74,21 @@ body{
   align-items: center;
   justify-content: space-between;
 }
-#Logo{
-  color: var(--lg);
-  font-size: 3em;
-  font-weight: 900;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-family: 'Iceland';
-  transition: color 0.6s ease;
+.logo{
+  background-image: url(../img/logo.png);
+background-repeat: no-repeat;
+background-size: 250px;
+background-position: fixed;
+width: 305px;
+height: 50px;
+margin-top: 12px;
+margin-bottom: 10px;
 }
 
-#Logo:hover{
-  color: var(--blue);
+
+.logo:hover{
+  background-image: url(../img/logo2.png);
+  transition: 0.5s ease;
 }
 
 nav{
@@ -186,10 +188,12 @@ a{
 h2{
   font-size: 6vw;
   font-family: 'Orbitron', sans-serif;
+  color: var(--dark);
 }
 h3{
   font-size: 5vw;
   font-family: 'Orbitron', sans-serif;
+  color: var(--dark);
 }
 /* Title Slut */
 /* bokse */
@@ -273,13 +277,12 @@ details[open] summary::after  {
   Margin-top: 5em;
 }
 
-p{
+p, li{
   font-size: 1.2em;
+  font-family: 'montserrat', sans-serif;
+  color: var(--dark);
 }
 
-li{
-  font-size: 1.2em;
-}
 
 
 /* Bokse slut */
@@ -292,6 +295,9 @@ img{
   border-radius: 10px;
   
 }
+.noborder{
+  border: none;
+}
 .projekterIMG:hover{
   padding: 1em;
   border: 6px solid var(--blue);
@@ -300,8 +306,10 @@ img{
 
 figcaption{
   text-align: center;
-  font-weight: bold;
+  font-weight: lighter;
   font-size: 1em;
+  color: #535353;
+  font-family: 'montserrat', sans-serif;
 }
 
 /* Screen */
