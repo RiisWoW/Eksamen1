@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>BACK-END</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Iceland&family=Montserrat&family=Orbitron&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Iceland&family=Orbitron&display=swap');
     </style>
   </head>
 
@@ -56,183 +56,185 @@
         </section>
   
         <section id="Boksene">
-  <!--Boks1 start-->
-          <section class="boks1">
-            <details><!-- Server -->
-              <summary>Server</summary>
-              <p>En server er navnet vi bruger for en computer, som deler sin data.
-                Dette er ofte en computer, med meget stor lager kapacitet, hvor andre <span class=imp>enheder(klienter/clients)</span> herved kan hente dataen.
-                </p>
-              <img src="img/Serverill.png" alt="Server illustration">
-              <details><!-- Forbindelse -->
-                <summary>Forbindelse til server</summary>
-                <p>Man forbinder til en server via netværket.
-                    Når det kommer til en hjemmeside, forbinder vi via en browser. Dette gør vi ved hjælp af et domænenavn. For at vi kan få domænenavnet til at være brugbart, skal vi bruge en <span class=imp>DNS </span>
-                </p>
-                <details><!-- DNS -->
-                    <summary>DNS</summary>
-                    <p>DNS eller Domain name system, er et system, som forbinder dit domænenavn med en <span class=imp>IPv4(255.255.255.255)</span> eller <span class=imp>IPv6(2001:0DB8:AC10:FE01::)</span> adresse.
-                    </p>
-                  </details><!-- DNS Slutter -->
-              </details><!-- Forbindelse Slutter -->
-              <details><!-- FTP -->
-                <summary>FTP</summary>
-                <p>FTP eller File transfer protocol, bruges til at forbinde og flytte indhold til serveren, fra din lokale enhed.
-                    Dette gøres igennem en FTP-client, som winSCP eller FileZila.                    
-                </p>
-              </details><!-- FTP Slutter -->
-            </details><!-- Server slutter -->
-          </section>
-  <!--Boks1 slut-->
-  <!--Boks2 start-->
-          <section class="boks2">
-            <details><!-- Kode  -->
-              <summary>Kode</summary>
-              <p>Kode er essencen af vores hjemmesider, her bruger vi HTML, CSS & JS.</p>
+          <div id="row1">
+            <section><!-- Server -->
+              <details><!-- Server -->
+                <summary>Server</summary>
+                <p>En server er navnet vi bruger for en computer, som deler sin data.
+                  Dette er ofte en computer, med meget stor lager kapacitet, hvor andre <span class=imp>enheder(klienter/clients)</span> herved kan hente dataen.
+                  </p>
+                <img src="img/Serverill.png" alt="Server illustration">
+                <details><!-- Forbindelse -->
+                  <summary>Forbindelse til server</summary>
+                  <p>Man forbinder til en server via netværket.
+                      Når det kommer til en hjemmeside, forbinder vi via en browser. Dette gør vi ved hjælp af et domænenavn. For at vi kan få domænenavnet til at være brugbart, skal vi bruge en <span class=imp>DNS </span>
+                  </p>
+                  <details><!-- DNS -->
+                      <summary>DNS</summary>
+                      <p>DNS eller Domain name system, er et system, som forbinder dit domænenavn med en <span class=imp>IPv4(255.255.255.255)</span> eller <span class=imp>IPv6(2001:0DB8:AC10:FE01::)</span> adresse.
+                      </p>
+                    </details><!-- DNS Slutter -->
+                </details><!-- Forbindelse Slutter -->
+                <details><!-- FTP -->
+                  <summary>FTP</summary>
+                  <p>FTP eller File transfer protocol, bruges til at forbinde og flytte indhold til serveren, fra din lokale enhed.
+                      Dette gøres igennem en FTP-client, som winSCP eller FileZila.                    
+                  </p>
+                </details><!-- FTP Slutter -->
+              </details><!-- Server slutter -->
+            </section><!-- Server slutter -->
 
-              <details>
-                <summary>HTML</summary><!-- HTML  -->
-                <p>HTML eller <span class=imp>Hypertext Markup Language</span>, er det oprindelig sprog når det kommer til at udvikle hjemmesider.</p>
-                <p>HTML er opbyggelsen af en hjemmeside, det bruges til at opbygge struktureren der er på siden. Dette gøres f.eks. ved at gå ind og opbygge sektioner, så du ved hvilke ting der hører sammen, som f.eks en sektion med alle dine billeder i.</p>
-                <p>Der er mange ting man kan gøre med HTML, dog bliver det kun brugt til beskrivelse og strukturen af indholdet i dag.</p>
-                <figure>
-                  <img src="img/HTML.png" alt="HTML1"/>
-                  <figcaption> Eksempel på HTML Kode </figcaption>
-                </figure>
-                <p>i eksempelet ovenover, kan vi se en hurtig start på et HTML-dokument, med en Overskrift1, vist ved <span class=imp>&lt;h1&gt;</span> og en brødtekst vist ved <span class=imp>&lt;p&gt;</span> </p>
-                    <details><!-- Attributter  -->
-                        <summary>Attributter</summary>
-                        <p>Attributter eller attributes, er yderligere information, som man tilføjer til et <span class=imp>HTML start-tag</span>.</p>
-                        <p>Det kunne være man ville tildele en class, en attribut som giver et tag et specifikt navn, dette gøres ved at lave et HTML start-tag, som &lt;h1&gt;, herved tilføje dens class &lt;h1 class=”h1class”&gt;. </p>
-                        <p>Dette hjælper mig, når jeg senere skal ind og lave CSS til min HTML, og jeg vil lave specifikke ændringer for h1class, men ikke alle h1’ere.</p>
-                        <figure>
-                          <img src="img/attributes.png" alt="Attributes"/>
-                          <figcaption> Eksempel på attributes, h1 har fået en class og p har fået et ID.</figcaption>
-                        </figure>
-                        <p>Nedenstående vil der være en liste over de mest brugte attributter, samt hvilken funktion de giver tagget.</p>
-                        <figure> 
-                          <ul>
-                            <li><span class=imp>”id”</span> - giver elementet et navn som den kan identificeres med</li>
-                            <li><span class=imp>"class"</span> - giver elementet et navn som det kan klassificeres med</li>
-                            <li><span class=imp>”href” </span> - bruges i et anchor tag (&lt;a&gt;) til at specificere link-addressen</li>
-                            <li><span class=imp>”scr”</span> - bruges enten i &lt;img&gt; eller &lt;video&gt; tag til at specificere filnavnet</li>
-                          </ul>
-                          <figcaption>(SimpleCode, n.d.)</figcaption>
-                        </figure>
+            <section><!-- Kode  -->
+              <details><!-- Kode  -->
+                <summary>Kode</summary>
+                <p>Kode er essencen af vores hjemmesider, her bruger vi HTML, CSS & JS.</p>
 
-                      </details><!-- Attributter Slutter -->
-                    <details><!-- Semantiske tags --> 
-                        <summary>Semantiske Tags</summary>
-                        <figure>
-                          <p>Semantiske tags, er tags med betydning. De beskriver nemlig hvad tagget burde indholde.</p>
-                          <p>Det kunne f.eks. være et <span class=imp>&lt;nav&gt;</span> tag, i så fald, ville søge maskiner, og mennesker, regne med der er navigation i dette tag.</p>
-                          <p> Disse semantiske tags, kan være en god idé at bruge fremfor ikke semantiske, hvor vidt muligt. Rigtig brug af semantiske tags, hjælper nemlig på hjemmesidens SEO. </p> 
-                          <figcaption> (Østergade, 2021)</figcaption>
-                        </figure>
-                        <figure>
-                          <p>Jeg har herunder lavet en liste med nogen af de Semantiske tags, og deres betydning.</p>
-                          <ul>
-                              <li><span class=imp>&lt;/header&gt; </span> - Sidehovedet</li>
-                              <li><span class=imp>&lt;/footer&gt; </span> - Sidefoden</li>
-                              <li><span class=imp>&lt;/nav&gt; </span> - Navigation</li>
-                              <li><span class=imp>&lt;/section&gt; </span> - en sektion</li>
-                          </ul>
+                <details>
+                  <summary>HTML</summary><!-- HTML  -->
+                  <p>HTML eller <span class=imp>Hypertext Markup Language</span>, er det oprindelig sprog når det kommer til at udvikle hjemmesider.</p>
+                  <p>HTML er opbyggelsen af en hjemmeside, det bruges til at opbygge struktureren der er på siden. Dette gøres f.eks. ved at gå ind og opbygge sektioner, så du ved hvilke ting der hører sammen, som f.eks en sektion med alle dine billeder i.</p>
+                  <p>Der er mange ting man kan gøre med HTML, dog bliver det kun brugt til beskrivelse og strukturen af indholdet i dag.</p>
+                  <figure>
+                    <img src="img/HTML.png" alt="HTML1"/>
+                    <figcaption> Eksempel på HTML Kode </figcaption>
+                  </figure>
+                  <p>i eksempelet ovenover, kan vi se en hurtig start på et HTML-dokument, med en Overskrift1, vist ved <span class=imp>&lt;h1&gt;</span> og en brødtekst vist ved <span class=imp>&lt;p&gt;</span> </p>
+                      <details><!-- Attributter  -->
+                          <summary>Attributter</summary>
+                          <p>Attributter eller attributes, er yderligere information, som man tilføjer til et <span class=imp>HTML start-tag</span>.</p>
+                          <p>Det kunne være man ville tildele en class, en attribut som giver et tag et specifikt navn, dette gøres ved at lave et HTML start-tag, som &lt;h1&gt;, herved tilføje dens class &lt;h1 class=”h1class”&gt;. </p>
+                          <p>Dette hjælper mig, når jeg senere skal ind og lave CSS til min HTML, og jeg vil lave specifikke ændringer for h1class, men ikke alle h1’ere.</p>
                           <figure>
-                            <img src="img/semantik.png" alt="semantisk opstilling af side">
-                            <figcaption> Eksempel på en semantisk opstilling af en side</figcaption>
+                            <img src="img/attributes.png" alt="Attributes"/>
+                            <figcaption> Eksempel på attributes, h1 har fået en class og p har fået et ID.</figcaption>
+                          </figure>
+                          <p>Nedenstående vil der være en liste over de mest brugte attributter, samt hvilken funktion de giver tagget.</p>
+                          <figure> 
+                            <ul>
+                              <li><span class=imp>”id”</span> - giver elementet et navn som den kan identificeres med</li>
+                              <li><span class=imp>"class"</span> - giver elementet et navn som det kan klassificeres med</li>
+                              <li><span class=imp>”href” </span> - bruges i et anchor tag (&lt;a&gt;) til at specificere link-addressen</li>
+                              <li><span class=imp>”scr”</span> - bruges enten i &lt;img&gt; eller &lt;video&gt; tag til at specificere filnavnet</li>
+                            </ul>
+                            <figcaption>(SimpleCode, n.d.)</figcaption>
+                          </figure>
+
+                        </details><!-- Attributter Slutter -->
+                      <details><!-- Semantiske tags --> 
+                          <summary>Semantiske Tags</summary>
+                          <figure>
+                            <p>Semantiske tags, er tags med betydning. De beskriver nemlig hvad tagget burde indholde.</p>
+                            <p>Det kunne f.eks. være et <span class=imp>&lt;nav&gt;</span> tag, i så fald, ville søge maskiner, og mennesker, regne med der er navigation i dette tag.</p>
+                            <p> Disse semantiske tags, kan være en god idé at bruge fremfor ikke semantiske, hvor vidt muligt. Rigtig brug af semantiske tags, hjælper nemlig på hjemmesidens SEO. </p> 
+                            <figcaption> (Østergade, 2021)</figcaption>
+                          </figure>
+                          <figure>
+                            <p>Jeg har herunder lavet en liste med nogen af de Semantiske tags, og deres betydning.</p>
+                            <ul>
+                                <li><span class=imp>&lt;/header&gt; </span> - Sidehovedet</li>
+                                <li><span class=imp>&lt;/footer&gt; </span> - Sidefoden</li>
+                                <li><span class=imp>&lt;/nav&gt; </span> - Navigation</li>
+                                <li><span class=imp>&lt;/section&gt; </span> - en sektion</li>
+                            </ul>
+                            <figure>
+                              <img src="img/semantik.png" alt="semantisk opstilling af side">
+                              <figcaption> Eksempel på en semantisk opstilling af en side</figcaption>
+                            </figure>
+                            
+                            <figcaption> (W3Schools, Unknown)</figcaption>
                           </figure>
                           
-                          <figcaption> (W3Schools, Unknown)</figcaption>
-                        </figure>
-                        
-                        
-                    </details><!-- Semantiske Tags Slutter --> 
-                    <details><!-- Hyperlinks -->
-                        <summary>Hyperlinks</summary>
-                        <p>Hyperlinks er det vi bruger til at forbinde internettet. Det kan enten være sider på samme server, eller det kan være andre sider, som f.eks. fra din side, ind til facebook.com.</p>
-                        <p>Vi opretter et link på et element i html, ved at ligge elementet i et <span class="imp">anchor tag &lt;/a&gt;</span> Dette kan være hvilket som helst element, dog er de mest normale elementer, knapper, billeder, paragraffer m.m.</p>
-                        <figure>
-                          <img src="img/hyperlink.png" alt="Attributes"/>
-                          <figcaption> Eksempel på et hyperlink, her er det en knap, der link til facebook</figcaption>
-                        </figure>
-                            
-                    </details><!-- Hyperlinks Slutter -->>
-              </details><!-- HTML Slutter -->
-              <details><!-- CSS -->
-                <summary>CSS</summary>
-                <figure>
-                  <p>CSS eller <span class=imp>Cascading Style Sheets</span>, bruges til at definere layoutet på en HTML side. Man kan sige at CSS visualiserer dine HTML-sider. Dette er fordi CSS består af flere hundrede forskellige egenskaber, som giver mulighed for at bestemme skriftyper, tekst størrelser, farver, marginer, højder, bredder, baggrundsfarver, omridser m.m. på HTML-siden.</p>
-<br> 
-                  <p> CSS er smart, fordi du kan lave en separat CSS fil, et stylesheet, som linkes til ens HTML-dokumenter. Derved kan du lave ændringer på alle sider, samtidigt.</p>
-                  <p> Det kunne f.eks. være du ville ændre standard farven på dine <span class="imp">&lt;h1&gt;</span> tags, så kan du bare ændre det ved at vælge en selector som rammer alle <span class="imp">&lt;h1&gt;</span>.</p>
-                  <figcaption>(Nemprogrammering, 2013)</figcaption>
-                </figure>
-                <figure>
-                  <img src="img/CSS.png" alt="Css eksempel">
-                  <figcaption>Eksempel på hvordan CSS kan se ud. Her er der blevet lavet h1 blå, via en hexkode, og størrelsen 2em. Derudover er p blevet gjort til en mørk blå, igen med hexkode, og den bruger en sans-serif font.</figcaption>
-                </figure>
+                          
+                      </details><!-- Semantiske Tags Slutter --> 
+                      <details><!-- Hyperlinks -->
+                          <summary>Hyperlinks</summary>
+                          <p>Hyperlinks er det vi bruger til at forbinde internettet. Det kan enten være sider på samme server, eller det kan være andre sider, som f.eks. fra din side, ind til facebook.com.</p>
+                          <p>Vi opretter et link på et element i html, ved at ligge elementet i et <span class="imp">anchor tag &lt;/a&gt;</span> Dette kan være hvilket som helst element, dog er de mest normale elementer, knapper, billeder, paragraffer m.m.</p>
+                          <figure>
+                            <img src="img/hyperlink.png" alt="Attributes"/>
+                            <figcaption> Eksempel på et hyperlink, her er det en knap, der link til facebook</figcaption>
+                          </figure>
+                              
+                      </details><!-- Hyperlinks Slutter -->>
+                </details><!-- HTML Slutter -->
+                <details><!-- CSS -->
+                  <summary>CSS</summary>
+                  <figure>
+                    <p>CSS eller <span class=imp>Cascading Style Sheets</span>, bruges til at definere layoutet på en HTML side. Man kan sige at CSS visualiserer dine HTML-sider. Dette er fordi CSS består af flere hundrede forskellige egenskaber, som giver mulighed for at bestemme skriftyper, tekst størrelser, farver, marginer, højder, bredder, baggrundsfarver, omridser m.m. på HTML-siden.</p>
 
-                <details><!-- Selectors -->
-                  <summary>Selectors</summary>
-                  <p> Der findes mange selectors i CSS, både dem der er der som standard, men også dem du laver selv</p>
-                  <p> Jeg har derfor lavet en oversigt over disse selectors herunder</p>
-                  <ul>
-                  <li><span class=imp>#id</span> - Rammer elementet, som du har givet ID'et</li>
-                  <li><span class=imp>.class</span> - Rammer alle elementer med denne class</li>
-                  <li><span class=imp>element.class</span> - Rammer det element, f.eks. h1, hvis det har den class</li>
-                  <li><span class=imp>element</span> - Rammer det element du har valgt, som f.eks h1</li>
-                  <li><span class=imp>element, element</span> - Rammer alle, af de elementer som er beskrevet, det kunne være h1 og p</li>
-                  <li><span class=imp>element element</span> - Rammer alle elementer som kommer sidst, som er lavet inde i det første element, f.eks. Alle h1, som er inde i en div.</li>
-                  <li><span class=imp>element, .class</span> - Rammer det element du har valgt, som f.eks h1, og den class du har valgt</li>
-                  <li><span class=imp>*</span> - Rammer alle elementer</li>
-                  </ul>
-      
-                </details><!-- selectors slutter -->
-
-                <details><!-- Display funktioner -->
-                    <summary>Display funktioner</summary>
-                    <p> I CSS har vi nogen forskellige Display funktioner, som vi bruger til at i fortælle hvordan og om et HTML element skal vises.</p>
-                    <p> Her er nogen af de forskellige display egenskaber </p>
-                    <ul>
-                    <li><span class=imp>Block</span></li>
-                    <li><span class=imp>Grid</span></li>
-                    <li><span class=imp>Flex</span></li>
-                    <li><span class=imp>Table</span></li>
-                    </ul>
-                    <p>En af de vigtigste display funktioner, vil være Grid. Det er fordi at det giver dig muligheden for at fuld kontrol over opsættelsen af dine elementer. Derudover giver det dig muligheden, hvis du laver et <span class=imp> Grid-template-area </span>,  at lave hurtige ændringer i hvor elementer skal være, i forhold til hinnanden.</p>
-                    <figure>
-                        <img src="img/grid.png" alt="GRID"/>
-                        <figcaption> Eksempel på et grid i CSS </figcaption>
-                    </figure>
-        
-                  </details><!-- Display funktioner slutter -->
-
-                  <details><!-- Responsivt design -->
-                    <summary>Responsivt design</summary>
-                    <p>Responsivt design, betyder at vi laver et design, som tilpasser sig til den måde brugeren bruger siden. F.Eks. Designer så der er et design som fungere på mobil enheder, da et traditonelt desktop design ikke virker der.</p>
-                    <p>Dette kan gøres ved at bruge en <span class=imp> @media </span>. Hvor vi så kan gå ind og specificere, ud fra hvilket media, siden skal ændre sig. </p>
-                    <p>Her er et eksempel på hvordan <span class=imp> @media screen and (min-width: 1080px) </span> Dette betyder at de ændringer du laver under denne Media, bliver set hvis skærmen er over 1080px bred.</p>        
-                    <figure>
-                      <img src="img/responsivt.png" alt="Responsivt design"/>
-                      <figcaption> Eksempel på @media </figcaption>
+                    <p class="br"> CSS er smart, fordi du kan lave en separat CSS fil, et stylesheet, som linkes til ens HTML-dokumenter. Derved kan du lave ændringer på alle sider, samtidigt.</p>
+                    <p> Det kunne f.eks. være du ville ændre standard farven på dine <span class="imp">&lt;h1&gt;</span> tags, så kan du bare ændre det ved at vælge en selector som rammer alle <span class="imp">&lt;h1&gt;</span>.</p>
+                    <figcaption>(Nemprogrammering, 2013)</figcaption>
                   </figure>
-                  </details><!-- Responsivt design slutter -->
+                  <figure>
+                    <img src="img/CSS.png" alt="Css eksempel">
+                    <figcaption>Eksempel på hvordan CSS kan se ud. Her er der blevet lavet h1 blå, via en hexkode, og størrelsen 2em. Derudover er p blevet gjort til en mørk blå, igen med hexkode, og den bruger en sans-serif font.</figcaption>
+                  </figure>
 
-                  <details><!-- Boks model  -->
-                    <summary>Boks model</summary>
-                    <figure>
-                        <p>Boks modellen er i sin helhed en boks der er rundt om alle HTML elementer</p>
-                        <p>Det består, som illustreret nedenfor, af margins, borders, padding og indholdet af boksen.</p>
-                        <img src="img/boxmodel.png" alt="BoxModel">
-                        <figcaption> (W3Schools, Unknown) </figcaption>
+                  <details><!-- Selectors -->
+                    <summary>Selectors</summary>
+                    <p> Der findes mange selectors i CSS, både dem der er der som standard, men også dem du laver selv</p>
+                    <p> Jeg har derfor lavet en oversigt over disse selectors herunder</p>
+                    <ul>
+                    <li><span class=imp>#id</span> - Rammer elementet, som du har givet ID'et</li>
+                    <li><span class=imp>.class</span> - Rammer alle elementer med denne class</li>
+                    <li><span class=imp>element.class</span> - Rammer det element, f.eks. h1, hvis det har den class</li>
+                    <li><span class=imp>element</span> - Rammer det element du har valgt, som f.eks h1</li>
+                    <li><span class=imp>element, element</span> - Rammer alle, af de elementer som er beskrevet, det kunne være h1 og p</li>
+                    <li><span class=imp>element element</span> - Rammer alle elementer som kommer sidst, som er lavet inde i det første element, f.eks. Alle h1, som er inde i en div.</li>
+                    <li><span class=imp>element, .class</span> - Rammer det element du har valgt, som f.eks h1, og den class du har valgt</li>
+                    <li><span class=imp>*</span> - Rammer alle elementer</li>
+                    </ul>
+        
+                  </details><!-- selectors slutter -->
+
+                  <details><!-- Display funktioner -->
+                      <summary>Display funktioner</summary>
+                      <p> I CSS har vi nogen forskellige Display funktioner, som vi bruger til at i fortælle hvordan og om et HTML element skal vises.</p>
+                      <p> Her er nogen af de forskellige display egenskaber </p>
+                      <ul>
+                      <li><span class=imp>Block</span></li>
+                      <li><span class=imp>Grid</span></li>
+                      <li><span class=imp>Flex</span></li>
+                      <li><span class=imp>Table</span></li>
+                      </ul>
+                      <p>En af de vigtigste display funktioner, vil være Grid. Det er fordi at det giver dig muligheden for at fuld kontrol over opsættelsen af dine elementer. Derudover giver det dig muligheden, hvis du laver et <span class=imp> Grid-template-area </span>,  at lave hurtige ændringer i hvor elementer skal være, i forhold til hinnanden.</p>
+                      <figure>
+                          <img src="img/grid.png" alt="GRID"/>
+                          <figcaption> Eksempel på et grid i CSS </figcaption>
+                      </figure>
+          
+                    </details><!-- Display funktioner slutter -->
+
+                    <details><!-- Responsivt design -->
+                      <summary>Responsivt design</summary>
+                      <p>Responsivt design, betyder at vi laver et design, som tilpasser sig til den måde brugeren bruger siden. F.Eks. Designer så der er et design som fungere på mobil enheder, da et traditonelt desktop design ikke virker der.</p>
+                      <p>Dette kan gøres ved at bruge en <span class=imp> @media </span>. Hvor vi så kan gå ind og specificere, ud fra hvilket media, siden skal ændre sig. </p>
+                      <p>Her er et eksempel på hvordan <span class=imp> @media screen and (min-width: 1080px) </span> Dette betyder at de ændringer du laver under denne Media, bliver set hvis skærmen er over 1080px bred.</p>        
+                      <figure>
+                        <img src="img/responsivt.png" alt="Responsivt design"/>
+                        <figcaption> Eksempel på @media </figcaption>
                     </figure>
-                  </details><!-- Boks model Slutter -->
-                
-              </details><!-- CSS Slutter -->
-            </details> <!-- "Kode" Slutter -->
-          </section>
-  <!--Boks2 slut-->
+                    </details><!-- Responsivt design slutter -->
 
+                    <details><!-- Boks model  -->
+                      <summary>Boks model</summary>
+                      <figure>
+                          <p>Boks modellen er i sin helhed en boks der er rundt om alle HTML elementer</p>
+                          <p>Det består, som illustreret nedenfor, af margins, borders, padding og indholdet af boksen.</p>
+                          <img src="img/boxmodel.png" alt="BoxModel">
+                          <figcaption> (W3Schools, Unknown) </figcaption>
+                      </figure>
+                    </details><!-- Boks model Slutter -->
+                  
+                </details><!-- CSS Slutter -->
+              </details> <!-- "Kode" Slutter -->
+            </section><!-- "Kode" Slutter -->
+
+          </div><!--row1 slut-->
+          <div id="row2">
+
+          </div><!--row2 slut-->
         </section><!--Boks section-->
   
   

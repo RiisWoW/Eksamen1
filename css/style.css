@@ -24,11 +24,7 @@ body{
   margin-top: 7em;
 }
 
-.imp{
-  background-color: #cacacac5;
-  padding: 4px;
-  border-radius: 5px;
-}
+
 /* Body slut */
 
 /*navigation bar*/
@@ -88,7 +84,7 @@ margin-bottom: 10px;
 
 .logo:hover{
   background-image: url(../img/logo2.png);
-  transition: 0.5s ease;
+  transition: 0.2s ease;
 }
 
 nav{
@@ -240,13 +236,14 @@ summary {
   padding: auto;
   display: block;
   position: relative;
-  font-size: 1.1em;
+  font-size: 1.5em;
   font-weight: bold;
   cursor: pointer;
   color: var(--dark);
   height: 3.5em;
   margin-bottom: 1em;
   font-family: 'Orbitron', sans-serif;
+  text-align: center;
 }
 
 summary::before, summary::after{
@@ -274,17 +271,20 @@ details[open] summary::after  {
   }
 
 
-
-#boks1{
-  Margin-top: 5em;
-}
-
 p, li{
   font-size: 1.2em;
-  font-family: 'montserrat', sans-serif;
+  font-family: 'arvo', serif;
   color: var(--dark);
 }
-
+.imp{
+  background-color: #cacacac5;
+  font-weight: bold;
+  padding: 4px;
+  border-radius: 5px;
+}
+.br{
+  margin-top: 1.2em;
+}
 
 
 /* Bokse slut */
@@ -300,18 +300,13 @@ img{
 .noborder{
   border: none;
 }
-.projekterIMG:hover{
-  padding: 1em;
-  border: 6px solid var(--blue);
-  transition: 0.2s;
-}
 
 figcaption{
   text-align: center;
   font-weight: lighter;
   font-size: 1em;
-  color: #535353;
-  font-family: 'montserrat', sans-serif;
+  color: #4b4b4b;
+  font-family: 'arvo', serif;
 }
 
 /* Screen */
@@ -323,13 +318,7 @@ figcaption{
   #navbar_links {
     display: flex;
   }
-  #Boksene{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    
-  }
-  #projekter{
+  #Boksene, #projekter{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -343,7 +332,6 @@ figcaption{
   
   summary {
     font-size: 1.5em;
-    text-align: center;
     height: 1em;
   }
 
