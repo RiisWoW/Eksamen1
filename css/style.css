@@ -332,6 +332,7 @@ p, li{
   font-size: 1em;
   font-family: 'Montserrat', sans-serif;
   color: var(--dark);
+  text-transform: capitalize;
 }
 .imp{
   background-color: #cacacac5;
