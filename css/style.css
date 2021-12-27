@@ -6,7 +6,7 @@
   --blue: #1194e7;
   --gray: #E5E5E5;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Iceland&family=Montserrat:wght@100&family=Orbitron&display=swap');
 
 /*Genbrugelige variabler slut*/
 
@@ -272,8 +272,8 @@ details[open] summary::after  {
 
 
 p, li{
-  font-size: 1.2em;
-  font-family: 'arvo', serif;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
   color: var(--dark);
 }
 .imp{
